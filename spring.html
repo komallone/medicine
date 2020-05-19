@@ -219,7 +219,8 @@
             // More API functions here:
             // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
             // the link to your model provided by Teachable Machine export panel
-          const URL = "https://teachablemachine.withgoogle.com/models/HC0CvuQ1y/";
+         const URL = "https://teachablemachine.withgoogle.com/models/MlHZvQt3s/";
+
 
             let model, webcam, labelContainer, maxPredictions;
             // Load the image model and setup the webcam
@@ -246,691 +247,422 @@
                 console.log(prediction[0].className);
                 var resultMessege;
                 switch (prediction[0].className) {
-                    case "Class 1":
-                        resultMessege = "고광나무"
+                   case "Class 1":
+                        resultMessege = "애기똥풀"
                         break;
                     case "Class 2":
-                        resultMessege = "꽃다지"
+                        resultMessege = "앵두"
                         break;
                     case "Class 3":
-                        resultMessege = "삼지구엽초"
+                        resultMessege = "야관문"
                         break;
                     case "Class 4":
-                        resultMessege = "산딸기"
+                        resultMessege = "야콘"
                         break;
                     case "Class 5":
-                        resultMessege = "다래"
+                        resultMessege = "양귀비"
                         break;
                     case "Class 6":
-                        resultMessege = "복수초"
+                        resultMessege = "어성초"
                         break;
                     case "Class 7":
-                        resultMessege = "천남성"
+                        resultMessege = "엉겅퀴"
                         break;
                     case "Class 8":
-                        resultMessege = "자운영"
+                        resultMessege = "여정자"
                         break;
                     case "Class 9":
-                        resultMessege = "함박꽃나무"
+                        resultMessege = "여주"
                         break;
                     case "Class 10":
-                        resultMessege = "층층나무"
+                        resultMessege = "연꽃"
                         break;
                     case "Class 11":
-                        resultMessege = "백화등"
+                        resultMessege = "예덕나무"
                         break;
                     case "Class 12":
-                        resultMessege = "애기똥풀"
+                        resultMessege = "오가피"
                         break;
                     case "Class 13":
-                        resultMessege = "창포"
+                        resultMessege = "오미자"
                         break;
                     case "Class 14":
-                        resultMessege = "관중야생화"
+                        resultMessege = "오이풀"
                         break;
                     case "Class 15":
-                        resultMessege = "민들레"
+                        resultMessege = "옻나무"
                         break;
                     case "Class 16":
-                        resultMessege = "노루귀"
+                        resultMessege = "와송"
                         break;
                     case "Class 17":
-                        resultMessege = "개뱔꽃"
+                        resultMessege = "으름덩굴"
                         break;
                     case "Class 18":
-                        resultMessege = "조팝니무"
+                        resultMessege = "으아리"
                         break;
                     case "Class 19":
-                        resultMessege = "별꽃"
+                        resultMessege = "음나무"
                         break;
                     case "Class 20":
-                        resultMessege = "나도바람꽃"
+                        resultMessege = "익모초"
                         break;
                     case "Class 21":
-                        resultMessege = "큰개불알풀"
+                        resultMessege = "인동덩굴"
                         break;
                     case "Class 22":
-                        resultMessege = "광대나물"
+                        resultMessege = "감국"
                         break;
                     case "Class 23":
-                        resultMessege = "씀바귀"
+                        resultMessege = "감초"
                         break;
                     case "Class 24":
-                        resultMessege = "꽃마리"
+                        resultMessege = "강황"
                         break;
                     case "Class 25":
-                        resultMessege = "갈퀴나물"
+                        resultMessege = "개별꽃"
                         break;
                     case "Class 26":
-                        resultMessege = "화엄제비꽃"
+                        resultMessege = "회화나무"
                         break;
                     case "Class 27":
-                        resultMessege = "금낭화"
+                        resultMessege = "고본"
                         break;
                     case "Class 28":
-                        resultMessege = "하늘매발톱"
+                        resultMessege = "고비"
                         break;
                     case "Class 29":
-                        resultMessege = "각시븟꽃"
+                        resultMessege = "고욤나무"
                         break;
                     case "Class 30":
-                        resultMessege = "봄맞이꽃"
+                        resultMessege = "고삼"
                         break;
                     case "Class 31":
-                        resultMessege = "봄맞이꽃"
+                        resultMessege = "골담초"
                         break;
                     case "Class 32":
-                        resultMessege = "븟꽃"
+                        resultMessege = "구기자"
                         break;
                     case "Class 33":
-                        resultMessege = "개불알풀"
+                        resultMessege = "구절초"
                         break
                     case "Class 34":
-                        resultMessege = "매자나무"
+                        resultMessege = "금낭화"
                         break;
                     case "Class 35":
-                        resultMessege = "깽깽이풀"
+                        resultMessege = "까마중"
                         break;
                     case "Class 36":
-                        resultMessege = "고깔제비꽃"
+                        resultMessege = "꾸지뽕나무"
                         break;
                     case "Class 37":
-                        resultMessege = "동백나무"
+                        resultMessege = "노박덩굴"
                         break;
                     case "Class 38":
-                        resultMessege = "달래"
+                        resultMessege = "단삼"
                         break;
                     case "Class 39":
-                        resultMessege = "덩굴꽃마리"
+                        resultMessege = "당귀"
                         break;
                     case "Class 40":
-                        resultMessege = "남산제비꽃"
+                        resultMessege = "더덕"
                         break;
                     case "Class 41":
-                        resultMessege = "산마늘"
+                        resultMessege = "도꼬마리"
                         break;
                     case "Class 42":
-                        resultMessege = "국수나무꽃"
+                        resultMessege = "도라지"
                         break;
                     case "Class 43":
-                        resultMessege = "큰꽃으아리"
+                        resultMessege = "돌배"
                         break;
                     case "Class 44":
-                        resultMessege = "애기굉이눈"
+                        resultMessege = "돼지감자"
                         break;
                     case "Class 45":
-                        resultMessege = "노랑매미꽃"
+                        resultMessege = "두릅나무"
                         break;
                     case "Class 46":
-                        resultMessege = "너도바람꽃"
+                        resultMessege = "두충나무"
                         break;
                     case "Class 47":
-                        resultMessege = "은방울꽃"
+                        resultMessege = "옥죽"
                         break;
                     case "Class 48":
-                        resultMessege = "노랑무늬븟꽃"
+                        resultMessege = "황정"
                         break;
                     case "Class 49":
-                        resultMessege = "조개나물"
+                        resultMessege = "딱총나무"
                         break;
                     case "Class 50":
-                        resultMessege = "염주괴불주머니"
+                        resultMessege = "뚝갈"
                         break;
                     case "Class 51":
-                        resultMessege = "찔레꽃"
+                        resultMessege = "땃두릅"
                         break;
                     case "Class 52":
-                        resultMessege = "우산나물"
+                        resultMessege = "산약"
                         break;
                     case "Class 53":
-                        resultMessege = "굉이밥"
+                        resultMessege = "마가목"
                         break;
                     case "Class 54":
-                        resultMessege = "광대수염"
+                        resultMessege = "마타리"
                         break;
                     case "Class 55":
-                        resultMessege = "삿갓나물"
+                        resultMessege = "만병초"
                         break;
                     case "Class 56":
-                        resultMessege = "골무꽃"
+                        resultMessege = "만삼"
                         break;
                     case "Class 57":
-                        resultMessege = "갈퀴현호색"
+                        resultMessege = "매실"
                         break;
                     case "Class 58":
-                        resultMessege = "동강할미꽃"
+                        resultMessege = "맥문동"
                         break;
                     case "Class 59":
-                        resultMessege = "쪽동백나무"
+                        resultMessege = "목련"
                         break;
                     case "Class 60":
-                        resultMessege = "파랭이꽃"
+                        resultMessege = "무릇"
                         break;
                     case "Class 61":
-                        resultMessege = "제비꽃"
+                        resultMessege = "무화과"
                         break;
                     case "Class 62":
-                        resultMessege = "붉은병꽃나무"
+                        resultMessege = "물레나물"
                         break;
                     case "Class 63":
-                        resultMessege = "흰노랑민들레"
+                        resultMessege = "민들레"
                         break;
                     case "Class 64":
-                        resultMessege = "콩제비꽃"
+                        resultMessege = "반하"
                         break;
                     case "Class 65":
-                        resultMessege = "긴병꽃플"
+                        resultMessege = "방아"
                         break;
                     case "Class 66":
-                        resultMessege = "앵초"
+                        resultMessege = "방풍"
                         break;
                     case "Class 67":
-                        resultMessege = "당개지치"
+                        resultMessege = "배암차즈기"
                         break;
                     case "Class 68":
-                        resultMessege = "노루발"
+                        resultMessege = "배풍등"
                         break;
                     case "Class 69":
-                        resultMessege = "산괭이눈"
+                        resultMessege = "백선"
                         break;
                     case "Class 70":
                         resultMessege = "백화사설초"
                         break;
                     case "Class 71":
-                        resultMessege = "금븟꽃"
+                        resultMessege = "뱀무"
                         break;
                     case "Class 72":
-                        resultMessege = "꿩의바람꽃"
+                        resultMessege = "범부채"
                         break;
                     case "Class 73":
-                        resultMessege = "복주머니란"
+                        resultMessege = "벽오동"
                         break;
                     case "Class 74":
-                        resultMessege = "벌깨덩굴"
+                        resultMessege = "복분자딸기나무"
                         break;
                     case "Class 75":
-                        resultMessege = "처녀치마"
+                        resultMessege = "복령"
                         break;
                     case "Class 76":
-                        resultMessege = "홀아비바람꽃"
+                        resultMessege = "비파나무"
                         break;
                     case "Class 77":
-                        resultMessege = "붉봄구슬봉이"
+                        resultMessege = "뽕나무"
                         break;
                     case "Class 78":
-                        resultMessege = "양지꽃"
+                        resultMessege = "산머루"
                         break;
                     case "Class 79":
-                        resultMessege = "타래븟꽃"
+                        resultMessege = "산사나무"
                         break;
                     case "Class 80":
-                        resultMessege = "금창초"
+                        resultMessege = "산수유"
                         break;
                     case "Class 81":
-                        resultMessege = "동의나물"
+                        resultMessege = "산양삼"
                         break;
                     case "Class 82":
-                        resultMessege = "때죽나무"
+                        resultMessege = "산초나무"
                         break;
                     case "Class 83":
-                        resultMessege = "금난초"
+                        resultMessege = "삼백초"
                         break;
                     case "Class 84":
-                        resultMessege = "지치"
+                        resultMessege = "삼지구엽초"
                         break;
                     case "Class 85":
-                        resultMessege = "청미래덩굴"
+                        resultMessege = "삽주"
                         break;
                     case "Class 86":
-                        resultMessege = "구슬붕이"
+                        resultMessege = "석류"
                         break;
                     case "Class 87":
-                        resultMessege = "지칭개"
+                        resultMessege = "석산"
                         break;
                     case "Class 88":
-                        resultMessege = "개족도리풀"
+                        resultMessege = "석창포"
                         break;
                     case "Class 89":
-                        resultMessege = "민백미꽃"
+                        resultMessege = "세신약초"
                         break;
                     case "Class 90":
-                        resultMessege = "백작약"
-                        break;
-                    case "Class 91":
-                        resultMessege = "히어리"
-                        break;
-                    case "Class 92":
-                        resultMessege = "설앵초"
-                        break;
-                    case "Class 93":
-                        resultMessege = "힐미꽃"
-                        break;
-                    case "Class 94":
-                        resultMessege = "옥녀꽃대"
-                        break;
-                    case "Class 95":
-                        resultMessege = "참조팝나무"
-                        break;
-                    case "Class 96":
-                        resultMessege = "돌양지꽃"
-                        break;
-                    case "Class 97":
-                        resultMessege = "참꽃마리"
-                        break;
-                    case "Class 98":
-                        resultMessege = "족도리풀"
-                        break;
-                    case "Class 99":
-                        resultMessege = "애기나리"
-                        break;
-                    case "Class 100":
-                        resultMessege = "개구리자리"
-                        break;
-                    case "Class 101":
-                        resultMessege = "진달래"
-                        break;
-                    case "Class 102":
-                        resultMessege = "연영초"
-                        break;
-                    case "Class 103":
-                        resultMessege = "조릿대"
-                        break;
-                    case "Class 104":
-                        resultMessege = "노랑제비꽃"
-                        break;
-                    case "Class 105":
-                        resultMessege = "골담초"
-                        break;
-                    case "Class 106":
-                        resultMessege = "자주괴불주머니"
-                        break;
-                    case "Class 107":
-                        resultMessege = "산괴불주머니"
-                        break;
-                    case "Class 108":
-                        resultMessege = "태백제비꽃"
-                        break;
-                    case "Class 109":
-                        resultMessege = "흰괭이눈"
-                        break;
-                    case "Class 110":
-                        resultMessege = "큰구슬붕이"
-                        break;
-                    case "Class 111":
-                        resultMessege = "은난초"
-                        break;
-                    case "Class 112":
-                        resultMessege = "벌노랑이"
-                        break;
-                    case "Class 113":
-                        resultMessege = "회리바람꽃"
-                        break;
-                    case "Class 114":
-                        resultMessege = "홀아비꽃대"
-                        break;
-                    case "Class 115":
-                        resultMessege = "감자난초"
-                        break;
-                    case "Class 116":
-                        resultMessege = "선밀나뮬"
-                        break;
-                    case "Class 117":
-                        resultMessege = "미나리냉이"
-                        break;
-                    case "Class 118":
-                        resultMessege = "고산구슬붕이"
-                        break;
-                    case "Class 119":
-                        resultMessege = "산민들레"
-                        break;
-                    case "Class 120":
-                        resultMessege = "부처손"
-                        break;
-                    case "Class 121":
-                        resultMessege = "뻐꾹채"
-                        break;
-                    case "Class 122":
-                        resultMessege = "큰괭이밥"
-                        break;
-                    case "Class 123":
-                        resultMessege = "등대풀"
-                        break;
-                    case "Class 124":
-                        resultMessege = "꿩의다리아재비"
-                        break;
-                    case "Class 125":
-                        resultMessege = "민주바람꽃"
-                        break;
-                    case "Class 126":
-                        resultMessege = "나도개감채"
-                        break;
-                    case "Class 127":
-                        resultMessege = "개사상자"
-                        break
-                    case "Class 128":
-                        resultMessege = "덩굴개별꽃"
-                        break;
-                    case "Class 129":
-                        resultMessege = "산자고"
-                        break;
-                    case "Class 130":
-                        resultMessege = "백선"
-                        break;
-                    case "Class 131":
-                        resultMessege = "고란초"
-                        break;
-                    case "Class 132":
-                        resultMessege = "뱀까마중"
-                        break;
-                    case "Class 133":
-                        resultMessege = "자란초"
-                        break;
-                    case "Class 134":
-                        resultMessege = "구변산바람초"
-                        break;
-                    case "Class 135":
-                        resultMessege = "미치광이풀"
-                        break;
-                    case "Class 136":
-                        resultMessege = "삼지닥나무"
-                        break;
-                    case "Class 137":
-                        resultMessege = "모데미풀"
-                        break;
-                    case "Class 138":
-                        resultMessege = "졸방제비꽃"
-                        break;
-                    case "Class 139":
-                        resultMessege = "솜방망이"
-                        break;
-                    case "Class 140":
-                        resultMessege = "반디지치"
-                        break;
-                    case "Class 141":
-                        resultMessege = "쥐오줌풀"
-                        break;
-                    case "Class 142":
-                        resultMessege = "윤판나물"
-                        break;
-                    case "Class 143":
-                        resultMessege = "애기괭이밥"
-                        break
-                    case "Class 144":
-                        resultMessege = "애기괭이밥"
-                        break;
-                    case "Class 145":
-                        resultMessege = "새끼노루귀"
-                        break;
-                    case "Class 146":
-                        resultMessege = "세잎양지꽃"
-                        break;
-                    case "Class 147":
-                        resultMessege = "애기풀"
-                        break;
-                    case "Class 148":
-                        resultMessege = "개감수"
-                        break;
-                    case "Class 149":
-                        resultMessege = "얼레지"
-                        break;
-                    case "Class 150":
-                        resultMessege = "노루삼"
-                        break;
-                    case "Class 151":
-                        resultMessege = "갑산제비꽃"
-                        break;
-                    case "Class 152":
-                        resultMessege = "땅비싸리"
-                        break
-                        
-                        
-                        
-                        
-                         case "Class 153":
-                        resultMessege = "서양민들레"
-                        break;
-                    case "Class 154":
-                        resultMessege = "광릉골무꽃"
-                        break;
-                    case "Class 155":
-                        resultMessege = "속새"
-                        break;
-                    case "Class 156":
-                        resultMessege = "가지괭이눈"
-                        break;
-                    case "Class 157":
-                        resultMessege = "왜미나리아재비"
-                        break;
-                    case "Class 158":
-                        resultMessege = "둥근털제비꽃"
-                        break;
-                    case "Class 159":
-                        resultMessege = "중의무릇"
-                        break;
-                    case "Class 160":
-                        resultMessege = "금강애기나리"
-                        break;
-                    case "Class 161":
-                        resultMessege = "매화노루발"
-                        break;
-                    case "Class 162":
                         resultMessege = "쇠뜨기"
                         break;
-                    case "Class 163":
-                        resultMessege = "큰시호"
+                    case "Class 91":
+                        resultMessege = "속단"
                         break;
-                    case "Class 164":
-                        resultMessege = "미선나무"
+                    case "Class 92":
+                        resultMessege = "쇠비름"
                         break;
-                    case "Class 165":
-                        resultMessege = "돌나물"
+                    case "Class 93":
+                        resultMessege = "순비기나무"
                         break;
-                    case "Class 166":
-                        resultMessege = "산앵도나무"
+                    case "Class 94":
+                        resultMessege = "시호"
                         break;
-                    case "Class 167":
-                        resultMessege = "줄딸기"
+                    case "Class 95":
+                        resultMessege = "사자발쑥"
                         break;
-                    case "Class 168":
-                        resultMessege = "술패랭이꽃"
+                    case "Class 96":
+                        resultMessege = "사철쑥"
                         break;
-                    case "Class 169":
-                        resultMessege = "요강나물"
+                    case "Class 97":
+                        resultMessege = "더위지기"
                         break;
-                    case "Class 170":
-                        resultMessege = "돌단풍"
+                    case "Class 98":
+                        resultMessege = "산겨릅나무"
                         break;
-                    case "Class 171":
-                        resultMessege = "한계령풀"
+                    case "Class 99":
+                        resultMessege = "자소"
                         break;
-                    case "Class 172":
-                        resultMessege = "머위"
+                    case "Class 100":
+                        resultMessege = "자초"
                         break;
-                    case "Class 173":
-                        resultMessege = "솜나물"
+                    case "Class 101":
+                        resultMessege = "작약"
                         break;
-                    case "Class 174":
-                        resultMessege = "큰앵초"
+                    case "Class 102":
+                        resultMessege = "잔대"
                         break;
-                    case "Class 175":
-                        resultMessege = "민대극"
+                    case "Class 103":
+                        resultMessege = "접시꽃"
                         break;
-                    case "Class 176":
-                        resultMessege = "돈나무"
+                    case "Class 104":
+                        resultMessege = "제충국"
                         break;
-                    case "Class 177":
-                        resultMessege = "백양더부살이"
+                    case "Class 105":
+                        resultMessege = "조각자"
                         break;
-                    case "Class 178":
-                        resultMessege = "두루미천남성"
+                    case "Class 106":
+                        resultMessege = "지모"
                         break;
-                    case "Class 179":
-                        resultMessege = "나도제비란"
+                    case "Class 107":
+                        resultMessege = "조릿대"
                         break;
-                    case "Class 180":
-                        resultMessege = "물참대"
+                    case "Class 108":
+                        resultMessege = "지황"
                         break;
-                    case "Class 181":
-                        resultMessege = "두루미꽃"
+                    case "Class 109":
+                        resultMessege = "진득찰"
                         break;
-                    case "Class 182":
-                        resultMessege = "등심븟꽃"
+                    case "Class 110":
+                        resultMessege = "질경이"
                         break;
-                    case "Class 183":
-                        resultMessege = "들현호색"
+                    case "Class 111":
+                        resultMessege = "짚신나물"
                         break;
-                    case "Class 184":
-                        resultMessege = "보춘화"
+                    case "Class 112":
+                        resultMessege = "참죽나무"
                         break;
-                    case "Class 186":
-                        resultMessege = "지리대극"
+                    case "Class 113":
+                        resultMessege = "창포"
+                        break;
+                    case "Class 114":
+                        resultMessege = "천궁"
+                        break;
+                    case "Class 115":
+                        resultMessege = "초오"
+                        break;
+                    case "Class 116":
+                        resultMessege = "천마"
+                        break;
+                    case "Class 117":
+                        resultMessege = "천문동"
+                        break;
+                    case "Class 118":
+                        resultMessege = "초피나무"
+                        break;
+                    case "Class 119":
+                        resultMessege = "초석잠"
+                        break;
+                    case "Class 120":
+                        resultMessege = "토란"
+                        break;
+                    case "Class 121":
+                        resultMessege = "토복령"
+                        break;
+                    case "Class 122":
+                        resultMessege = "패모"
+                        break;
+                    case "Class 123":
+                        resultMessege = "하고초"
+                        break;
+                    case "Class 124":
+                        resultMessege = "하눌타리"
+                        break;
+                    case "Class 125":
+                        resultMessege = "한련초"
+                        break;
+                    case "Class 126":
+                        resultMessege = "하수오"
+                        break;
+                    case "Class 127":
+                        resultMessege = "할미꽃"
                         break
-                    case "Class 186":
-                        resultMessege = "어름덩굴"
+                    case "Class 128":
+                        resultMessege = "헛개나무"
                         break;
-                    case "Class 187":
-                        resultMessege = "칠보치마"
+                    case "Class 129":
+                        resultMessege = "현호색"
                         break;
-                    case "Class 188":
-                        resultMessege = "풀솜대"
+                    case "Class 130":
+                        resultMessege = "현삼"
                         break;
-                    case "Class 189":
-                        resultMessege = "구실사리"
+                    case "Class 131":
+                        resultMessege = "형개"
                         break;
-                    case "Class 190":
-                        resultMessege = "산솜다리"
+                    case "Class 132":
+                        resultMessege = "홍화"
                         break;
-                    case "Class 191":
-                        resultMessege = "주름잎"
+                    case "Class 133":
+                        resultMessege = "화살나무"
                         break;
-                    case "Class 192":
-                        resultMessege = "큰천남성"
+                    case "Class 134":
+                        resultMessege = "황금"
                         break;
-                    case "Class 193":
-                        resultMessege = "점현호색"
+                    case "Class 135":
+                        resultMessege = "황기"
                         break;
-                    case "Class 194":
-                        resultMessege = "앉은부채"
+                    case "Class 136":
+                        resultMessege = "황칠나무"
                         break;
-                    case "Class 195":
-                        resultMessege = "붉은벌깨덩굴"
-                        break;
-                    case "Class 196":
-                        resultMessege = "초종용"
-                        break;
-                    case "Class 197":
-                        resultMessege = "산골무꽃"
-                        break;
-                    case "Class 198":
-                        resultMessege = "민둥뫼제비꽃"
-                        break;
-                    case "Class 199":
-                        resultMessege = "생강나무"
-                        break;
-                    case "Class 200":
-                        resultMessege = "구슬댕댕이"
-                        break;
-                    case "Class 201":
-                        resultMessege = "참나무겨우살이"
-                        break;
-                    case "Class 202":
-                        resultMessege = "댓잎현호색"
-                        break;
-                    case "Class 203":
-                        resultMessege = "큰두루미꽃"
-                        break;
-                    case "Class 204":
-                        resultMessege = "세뿔석위"
-                        break;
-                    case "Class 205":
-                        resultMessege = "붉은참반디"
-                        break;
-                    case "Class 206":
-                        resultMessege = "돌가시나무"
-                        break;
-                    case "Class 207":
-                        resultMessege = "백미꽃"
-                        break;
-                    case "Class 208":
-                        resultMessege = "알록제비꽃"
-                        break;
-                    case "Class 209":
-                        resultMessege = "왜갓냉이"
-                        break;
-                    case "Class 210":
-                        resultMessege = "좀가지풀"
-                        break;
-                    case "Class 211":
-                        resultMessege = "매화마름"
-                        break;
-                    case "Class 212":
-                        resultMessege = "물솜방망이"
-                        break;
-                    case "Class 213":
-                        resultMessege = "선괭이밥"
-                        break;
-                    case "Class 214":
-                        resultMessege = "지리개별꽃"
-                        break;
-                    case "Class 215":
-                        resultMessege = "생열귀나무"
-                        break;
-                    case "Class 216":
-                        resultMessege = "장딸기"
-                        break;
-                    case "Class 217":
-                        resultMessege = "더깨비쇠고비"
-                        break;
-                    case "Class 218":
-                        resultMessege = "왜현호색"
-                        break;
-                    case "Class 219":
-                        resultMessege = "큰애기나리"
-                        break;
-                    case "Class 220":
-                        resultMessege = "가는잎향유"
-                        break;
-                    case "Class 221":
-                        resultMessege = "두메닥나무"
-                        break;
-                    case "Class 222":
-                        resultMessege = "민솜대"
-                        break;
-                    case "Class 223":
-                        resultMessege = "우단일옆"
-                        break;
-                    case "Class 224":
-                        resultMessege = "타래난초"
-                        break;
-                   
                     default:
                         resultMessege = "알수없음"
                         break;
                 }
                 $('.result-message').html(resultMessege);
             }
-       </script>
-
+        
+ </script>
                <br/>
     <div class="ad-banner">
              <ins class="kakao_ad_area" style="display:none;" 
